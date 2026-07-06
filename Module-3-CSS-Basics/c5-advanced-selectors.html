@@ -1,0 +1,115 @@
+
+<!-- Group selector, Immediate child, use of multiple class at a time -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors</title>
+
+    <style>
+        h3{
+            color: red;
+        }
+
+        /* group or combine selectors */
+        h2,ol, ul, .letsgo{
+            background-color: #4a8fdf;
+        }
+
+        .pink{
+            color: rgb(204, 8, 243);
+        }
+        .green  {
+            color: green;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+
+        
+        /* multiple class selector */
+        .pink.bold{
+            font-size: 2rem;
+            
+        } 
+        
+        section p { 
+            color: rgb(31, 214, 205)
+        }
+
+        article > p {
+            color: blueviolet;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h2>This is for multiple selectors </h2>
+
+    <h3>There are mainly 5 types of selectors </h3>
+    <ol>
+        <li>Tag Selector</li>
+        <li>Class Selector</li>
+        <li>Id Selector</li>
+        <li>Universal Selector</li>
+        <li>Group Selector</li>
+    </ol>
+
+
+    <h3>Beside this selectors we can use : </h3>
+
+    <ul>
+        <li> Immediate Selector</li>
+        <li>Multiple class name at a time</li>
+    </ul>
+
+    <p class="letsgo">So lets see : </p>
+
+
+
+
+    <!-- multiple class name at a time -->
+    <h3 class=" green bold underline"> Multiple class name</h3>
+
+    <!-- here working : .pink, .bold & .pink.bold -->
+    <h4 class="pink bold"> Multiple class name 2</h4>
+
+
+
+
+    <!-- section p{}  : it will work for all p--> 
+    <section>
+        <h3>For all attribute inside this article </h3>  
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, aperiam.</p>
+
+        <p>kemon cholce</p>
+        <p>valo to? </p>
+    </section>
+
+
+
+    <!--article > p {}  : it will work for only the immediate p i.e not for the div of p-->
+    <article>
+        <h3>For the Immediate child of article</h3>
+
+        <!-- This 2 p are the immediate child of article -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veniam eos reiciendis  molestiae. Tempore reiciendis ratione expedita reprehenderit asperiores veniam.</p>
+        <p>Hello dear</p>
+
+        <div>
+            <!-- this p isnot the immediate child of article -->
+            <p> How are you? </p>
+        </div>
+
+    </article>
+
+
+</body>
+</html>

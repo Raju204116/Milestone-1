@@ -1,0 +1,131 @@
+
+<!-- 
+ CSS measuring units define the size of elements, text, spacing, and layouts.
+They are divided into Absolute Units and Relative Units. 
+-->
+
+<!-- 
+*****************1.Absolute Units (Fixed Size)**************************
+These units stay the same regardless of screen size.
+
+
+| Unit | Meaning            | Example            |
+| ---- | ------------------ | ------------------ |
+| `px` | Pixels             | `font-size: 16px;` |
+| `cm` | Centimeters        | `width: 5cm;`      |
+| `mm` | Millimeters        | `width: 20mm;`     |
+| `in` | Inches             | `width: 2in;`      |
+| `pt` | Points (1/72 inch) | `font-size: 12pt;` |
+| `pc` | Picas (12 points)  | `width: 5pc;`      |
+
+✅ px is the most commonly used absolute unit.
+
+
+
+*****************2.Relative Units**************************
+These units change based on the parent element, root element, or viewport(window/phone screen).
+
+| Unit   | Full Form        | Relative To                                            | Common Uses                           | Example                           |
+| ------ | ---------------- | ------------------------------------------------------ | ------------------------------------- | --------------------------------- |
+| `%`    | Percentage       | Parent element's size                                  | Responsive width/height               | `width: 80%;`                     |
+| `em`   | Element (M)      | Parent element's font size                             | Font sizes, padding, margin           | `font-size: 2em;`                 |
+| `rem`  | Root EM          | Root (`html`) font size                                | Font sizes and spacing                | `font-size: 1.5rem;`              |
+| `fr`   | Fraction         | Fraction of available space in a CSS Grid container    | Grid layouts                          | `grid-template-columns: 1fr 2fr;` |
+
+| `vw`   | Viewport Width   | 1% of the viewport width                               | Responsive widths, full-width layouts | `width: 50vw;`                    |
+| `vh`   | Viewport Height  | 1% of the viewport height                              | Full-screen sections                  | `height: 100vh;`                  |
+| `vmin` | Viewport Minimum | 1% of the smaller viewport dimension (width or height) | Responsive scaling                    | `font-size: 5vmin;`               |
+| `vmax` | Viewport Maximum | 1% of the larger viewport dimension (width or height)  | Responsive scaling                    | `font-size: 5vmax;`               |
+| `ch`   | Character        | Width of the `0` (zero) character                      | Limiting text width                   | `width: 60ch;`                    |
+| `ex`   | X-height         | Height of the lowercase `x`                            | Rarely used for typography            | `font-size: 2ex;`                 |
+
+
+
+✅ Most important relative units to learn first:  rem, em, %, fr and vw, vh.
+
+
+*************Details Analysis*******************
+
+
+************* % -Relative to the parent element.*******************
+.container {
+    width: 80%;
+}
+If the parent is 1000px wide, then 80% = 800px
+
+
+
+************** em -Relative to the font size of the parent.******************
+
+.parent {
+    font-size: 20px;
+}
+
+.child {
+    font-size: 2em;
+}
+
+Calculation: 2 × 20px = 40px
+
+
+************** rem -Relative to the font size of the root (html).******************
+It stays consistent no matter how deeply nested an element is.
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+Calculation: 2 × 16px = 32px
+
+
+
+**************** fr - Used only with CSS Grid. *********************
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+The available space is divided into: 25% | 50% | 25%  (total of 100%)
+
+
+
+
+
+
+************** 1vw = 1% of the browser width ******************
+
+width: 50vw;
+
+If the browser width is 1200px, then 50vw = 600px  (50% of 1200)
+
+25vw=300, 75vw=900
+
+
+*************same for vh*******************
+
+
+
+****************vmin - Uses the smaller of the viewport's width or height.**************************
+
+Width = 1200px
+Height = 800px
+
+1vmin = 8px (min of 12 & )
+
+************oposite for vmax**********
+
+
+
+
+-->
+
+
+<!-- Coding Example -->
+
+
+
+

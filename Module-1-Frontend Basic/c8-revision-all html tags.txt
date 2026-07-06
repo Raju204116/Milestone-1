@@ -1,0 +1,130 @@
+
+<!--As a beginner in the first day of html what tags
+should I learn and practice  -->
+
+<!-- or : I have practiced most of the html tags, but i have confusion if I had missed any, So list out all the important html tags in short -->
+
+
+
+<!-- Gpt : Here's a practical checklist. -->
+
+1. Document Structure
+
+| Tag               | Purpose                 |
+| ----------------- | ----------------------- |
+| `<!DOCTYPE html>` | HTML5 declaration       |
+| `<html>`          | Root element            |
+| `<head>`          | Metadata                |
+| `<title>`         | Browser tab title       |
+| `<meta>`          | Metadata                |
+| `<link>`          | Link CSS, favicon, etc |
+| `<style>`         | Internal CSS            |
+| `<script>`        | JavaScript              |
+| `<body>`          | Visible content         |
+
+
+
+2. Text Content
+
+| Tag           | Purpose          |
+| ------------- | ---------------- |
+| `<h1>`-`<h6>` | Headings         |
+| `<p>`         | Paragraph        |
+| `<br>`        | Line break       |
+| `<hr>`        | Horizontal line  |
+| `<strong>`    | Important text/bold  |
+| `<b>`         | Bold text        |   
+| `<em>`        | Emphasized text/italic  |
+| `<i>`         | Italic text      |
+| `<mark>`      | Highlighted text |
+| `<small>`     | Smaller text     |
+| `<sup>`       | Superscript      |
+| `<sub>`       | Subscript        |
+
+
+3. Links & Images
+
+| Tag     | Purpose   |
+| ------- | --------- |
+| `<a>`   | Hyperlink |
+| `<img>` | Image     |
+
+
+4. Lists
+
+| Tag    | Purpose             |
+| ------ | ------------------- |
+| `<ul>` | Unordered list      |
+| `<ol>` | Ordered list        |
+| `<li>` | List item           |
+| `<dl>` | Description list    |
+| `<dt>` | Description term    |
+| `<dd>` | Description details |
+
+
+6. Containers
+
+| Tag      | Purpose          |
+| -------- | ---------------- |
+| `<div>`  | Block container  |
+| `<span>` | Inline container |
+
+//others semantic tags (class-7)
+
+
+7. Tables
+
+| Tag       | Purpose      |
+| --------- | ------------ |
+| `<table>` | Table        |
+| `<tr>`    | Table row    |
+| `<th>`    | Header cell  |
+| `<td>`    | Data cell    |
+| `<thead>` | Table head   |
+| `<tbody>` | Table body   |
+| `<tfoot>` | Table footer |
+
+
+8. Forms ⭐ (Very Important)
+
+| Tag          | Purpose         |
+| ------------ | --------------- |
+| `<form>`     | Form            |
+| `<label>`    | Label           |
+| `<input>`    | Input field     |
+| `<textarea>` | Multi-line text |
+| `<button>`   | Button          |
+| `<select>`   | Dropdown        |
+| `<option>`   | Dropdown option |
+| `<fieldset>` | Group fields    |
+| `<legend>`   | Fieldset title  |
+
+
+    
+9. Multimedia
+
+| Tag        | Purpose               |
+| ---------- | --------------------- |
+| `<audio>`  | Audio                 |
+| `<video>`  | Video                 |
+| `<source>` | Media source          |
+| `<iframe>` | Embed another webpage/youtube |
+
+
+
+10. Miscellaneous (বিবিধ)
+
+| Tag            | Purpose                 |
+| -------------- | ----------------------- |
+| `<figure>`     | Figure                  |
+| `<figcaption>` | Figure caption          |
+| `<code>`       | Code snippet            |
+| `<pre>`        | Preformatted text       |
+| `<blockquote>` | Long quotation          |
+| `<q>`          | Short quotation         |
+| `<details>`    | Expandable content      |
+| `<summary>`    | Summary for `<details>` |
+
+
+
+ <!-- practice : make a simple page with them -->

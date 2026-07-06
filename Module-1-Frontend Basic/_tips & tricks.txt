@@ -1,0 +1,48 @@
+
+
+<!-- Tips & Tricks -->
+
+1.(ctrl + /) for auto comment & uncomment 
+2.run the site by clicking the html file inside Module-1 (mypc) 
+3. or Right click in any free space inside code , open with live server  
+
+4.( alt+ shift+ down arrow ): for duplicating any line or block -->
+
+5. shift + 1(!), then tab : for full html syntax 
+
+6.<p>lorem10 tab : dile 10 word er ekta para auto hoye jabe</p> 
+
+
+
+
+
+HTML4 vs HTML5 (interview)
+
+| Feature               | HTML4                         | HTML5                                                                                |
+| --------------------- | ----------------------------- | ------------------------------------------------------------------------------------ |
+| Release Year          | 1997                          | 2014 (official recommendation)                                                       |
+| Doctype               | Long and complex              | Simple: `<!DOCTYPE html>`                                                            |
+| Multimedia            | Required plugins (like Flash) | Built-in `<audio>` and `<video>`                                                     |
+| Semantic Tags         | Very few                      | Added `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>` |
+| Form Inputs           | Basic input types             | New types like `email`, `date`, `number`, `url`, `range`, `color`, etc.              |
+| Graphics              | No native support             | Added `<canvas>` and SVG support                                                     |
+| Storage               | Cookies mainly                | `localStorage` and `sessionStorage`                                                  |
+| APIs                  | Very limited                  | Supports APIs like Geolocation, Drag & Drop, Web Workers, WebSocket, and more        |
+| Mobile Support        | Limited                       | Designed to work much better on modern devices                                       |
+| Browser Compatibility | Older browsers                | Modern browsers                                                                      |
+
+
+
+inline element & block element (interview)
+
+| Block Element                                     | Inline Element                                  |
+| ------------------------------------------------- | ----------------------------------------------- |
+| Starts on a **new line**                          | **Does not** start on a new line                |
+| Takes the **full available width** by default     | Takes **only the width it needs**               |
+| Used to create the **structure/layout** of a page | Used for **small parts of content** inside text |
+| Examples:<div>,<p>,<h1>,<section><article><header>  | Examples: <span>,<a>,<strong>,<em>,<b>,<i>,<mark><small><sub><sup><label>  |
+<footer><nav><main><aside><ul><ol><li><form><table>
+
+Memory Trick 🧠
+Block = Box 📦 → Starts on a new line and occupies the available width.
+Inline = In Line ➡️ → Stays in the same line as surrounding content.

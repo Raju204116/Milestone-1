@@ -1,0 +1,5 @@
+
+1.type: link:css then tab
+  result :  <link rel="stylesheet" href="style.css">
+
+

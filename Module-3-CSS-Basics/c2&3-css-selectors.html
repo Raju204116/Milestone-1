@@ -1,0 +1,118 @@
+
+
+<!-- There are many kinds of selectors in css-->
+
+<!-- 
+
+***************1.Element/tag Selector(uses direct tag name)****************** 
+//html
+<h1> Hello tag </h1>
+<p>This is tag selector </p>
+
+
+//css :here h1 & p is the tag 
+h1 {   
+    color: red;
+}
+p{
+    font-size:20px
+}
+
+
+
+*************2.Class Selector (uses dot.)  ********************
+NB :  একই নামে একাধিক ক্লাস থাকতে পারবে
+
+
+//html
+<h1 class="text">Hello class</h1>
+<p class="text"></p>
+
+//css
+.text {
+    color: blue;
+}
+
+
+****************3.Id Selector (uses hash #)*****************
+NB : একই নামে শুধু  একটি আইডিই থাকতে পারবে 
+
+//html
+<h1 id="heading"> Hello Id </h1>
+<p id="title" > This is title </p>
+
+//css
+#title {
+    color: green;
+}
+
+
+
+**************4.Universal Selector (uses star * )******************* 
+ it means style for full page
+
+//css only
+* {
+    margin: 0;
+}
+
+
+****************5.Group Selector (uses comma ,)***************** 
+ it means same property for multiple tags)
+
+//html
+<h1> Hello Group </h1>
+<h2>Hi group members</h2>
+<p>This is group selector </p>
+
+//css
+h1, h2, p {
+    color: black;
+}
+ 
+
+-->
+
+
+<!-- Coding example -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .first{
+            color: red;
+        }
+        .para{
+            color: rgb(126, 0, 243);
+        }
+        #second{
+            color: greenyellow;
+        }
+        h3{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="first">This is Class selector</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis exercitationem commodi consequuntur recusandae iusto nostrum animi! Autem, asperiores aliquam.</p>
+    </div>
+
+    <div>
+        <h2 id="second"> This is Id selector</h2>
+        <p class="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, impedit asperiores! Quia, quod. Corporis mollitia reiciendis ducimus ipsa modi officiis porro, nostrum fugit voluptatum itaque nihil aliquam consequatur, eligendi nulla.</p>
+    </div>
+
+
+    <div>
+        <h3>This is tag selector</h3>
+    </div>
+</body>
+</html>

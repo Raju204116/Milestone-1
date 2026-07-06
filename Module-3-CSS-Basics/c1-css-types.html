@@ -1,0 +1,104 @@
+
+<!-- What is CSS? 
+CSS (Cascading Style Sheets) is used to style HTML elements.
+
+Cascading means সিরিয়াল মেইনটেইন করবে । অর্থাৎ উপর থেকে নিচের দিকে কাজ করবে ।
+তবে  একই নামে দুইটি Property(h1{color:red} h1{color:green}) থাকলে পরেরটা ইউজ হবে;
+আর External CSS সর্বদা Internal CSS কে Override করবে ।
+-->
+
+
+
+<!--  
+
+*****************CSS Syntax *************
+selector {
+    property: value;
+}
+
+//ex:
+p {
+    color: green;
+}
+
+
+
+****************There are 3 Ways to Add CSS with html **************
+
+
+*********1.Inline CSS **********
+It is Quick but messy
+
+//index.html
+<h1 style="color:red;">Hello</h1>
+
+
+
+
+
+********************2.Internal CSS********************
+It is Good for single page demos
+
+//index.html
+<head>
+    <style>
+        h1{
+            color:red;
+        }
+    </style>
+</head>
+
+
+
+*********************3.External CSS ***********************
+It is Best for real-projects. Clean & reusable
+
+//index.html
+ <link rel="stylesheet" href="style.css">
+
+// style.css 
+  h1{
+    color:red;
+}
+
+-->
+
+
+
+<!-- Coding Example -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types</title>
+
+    <!--  External css -->
+    <link rel="stylesheet" href="styles/style.css"> 
+
+
+    <!-- Internal CSS -->
+     <style> 
+        h2{
+            color: green;
+        }
+     </style>
+</head>
+<body>
+    
+    <div>
+        <!-- Inline CSS -->
+        <p style="color:red"> This is Inline CSS </p>
+
+        <!-- Internal(head>>style) -->
+        <h2 class="head4"> This is internal CSS</h2>
+
+        <!-- External (style.css) -->
+        <h4>This is external CSS </h4> 
+    </div>
+
+
+    
+</body>
+</html>

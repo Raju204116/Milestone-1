@@ -44,7 +44,7 @@ quis <em>dicta blanditiis</em> veniam, excepturi error, quos ex voluptate. Vitae
 
 
 <!-- ordered list -->
-<ol type="A">
+<ol type="A">   //this is older method
     <li >banana</li>
     <li>tomato</li>
 </ol>
@@ -58,3 +58,80 @@ quis <em>dicta blanditiis</em> veniam, excepturi error, quos ex voluptate. Vitae
     <li >banana</li>
     <li>tomato</li>
 </ol>
+
+
+
+<!-- 
+*************There is another way of list styling, used in css****************
+
+
+
+1. Unordered List (<ul>) Styles
+
+    | Value            | Output    |
+| ---------------- | --------- |
+| `disc` (default) | ●         |
+| `circle`         | ○         |
+| `square`         | ■         |
+| `none`           | No bullet |
+
+<ul style="list-style-type: disc;">
+    <li>HTML</li>
+    <li>CSS</li>
+</ul>
+
+
+2. Ordered List (<ol>) Styles
+
+    | Value                  | Output                      |
+| ---------------------- | --------------------------- |
+| `decimal` (default)    | 1, 2, 3                     |
+| `decimal-leading-zero` | 01, 02, 03                  |
+| `lower-alpha`          | a, b, c                     |
+| `upper-alpha`          | A, B, C                     |
+| `lower-roman`          | i, ii, iii                  |
+| `upper-roman`          | I, II, III                  |
+| `lower-greek`          | α, β, γ *(limited support)* |
+
+
+<ol style="list-style-type: upper-alpha;">
+    <li>Apple</li>
+    <li>Mango</li>
+</ol>
+
+
+
+
+3. The list-style Shorthand
+
+list-style: square;
+list-style: upper-roman inside;
+
+
+
+4. list-style-position : Controls where the marker appears.
+
+list-style-position: outside;   /* Default */
+list-style-position: inside;
+
+
+
+
+5. list-style-image : Use an image instead of a bullet.
+
+ul {
+    list-style-image: url("bullet.png");
+}
+
+
+Summary Table
+
+
+| Property              | Purpose                             |
+| --------------------- | ----------------------------------- |
+| `list-style-type`     | Changes bullet or numbering style   |
+| `list-style-position` | Places marker inside or outside     |
+| `list-style-image`    | Uses an image as the marker         |
+| `list-style`          | Shorthand for list-style properties |
+
+-->

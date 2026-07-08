@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Design</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: lightblue;
+            padding: 10px 30px;  
+        }
+
+        nav ul{
+            display: flex;
+            /* justify-content: end; */
+            /* align-items: center; */
+            list-style: none;
+            gap: 20px;
+            
+        }
+
+        /* nav ul li{
+            margin-right: 15px;
+            padding: 0 10px;
+            
+        } */
+
+        /* nav ul li:hover{
+            background-color: rgb(43, 138, 167);
+        } */
+
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding: 10px 15px;
+        }
+
+        nav a:hover{
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <nav> <!-- this is the parent container for first flexbox -->
+        <h2 ><a href="">Raju</a></h2> <!-- an empty href="" will reload the page -->
+
+        <ul> <!-- Second flexbox parent -->
+            <li> <a href="./c4-3-nav-bar-design.html">Home</a>  </li> 
+            <li><a href="./c4-1-emmet.html">About</a></li>
+            <li><a href="./c4-2-flex-box.html">Contact</a></li>
+  
+        </ul>
+    </nav>
+
+
+</body>
+</html>

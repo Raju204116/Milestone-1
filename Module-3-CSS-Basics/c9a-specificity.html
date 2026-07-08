@@ -1,0 +1,87 @@
+
+<!-- 
+✅CSS Specificity
+Specificity is the rule the browser uses to decide which CSS declaration wins 
+when multiple rules target the same element.
+
+Think of it as a priority system.
+
+
+Specificity Priority: From highest to lowest:
+
+| Selector                                                        | Priority 
+| --------------------------------------------------------------- | -------- 
+| Inline style                                                    | ⭐⭐⭐⭐⭐      
+| ID (`#id`)                                                      | ⭐⭐⭐⭐        
+| Class (`.class`), Attribute (`[type]`), Pseudo-class (`:hover`) | ⭐⭐⭐           
+| Element (`p`, `h1`) and Pseudo-element (`::before`)             | ⭐⭐              
+| Universal (`*`)                                                 | ⭐                
+
+In short : Inline, IDs, Classes, Elements , Universal.
+
+
+
+✅Ex-1 : element vs id vs class
+*************************************
+
+//html
+<p id="title" class="text">
+    Hello World
+</p>
+
+
+//css
+p {color: blue;}
+
+.text {color: green;}
+
+#title {color: red;}
+
+
+//output:
+Hello World → Red
+
+Because ID selectors have higher specificity than class and element selectors.
+
+
+✅Ex-2: inline vs id
+******************************
+
+<p id="title" style="color:red;">
+    Hello
+</p>
+
+#title {
+    color: blue;
+}
+
+output : Red    // Inline > ID
+
+
+
+✅Ex-3 : same level
+*****************************
+If two selectors have the same specificity, the last rule written wins.
+
+p {color: blue;}
+p { color: red;}
+
+//output : red 
+
+
+
+
+✅Exceptional : !important
+*****************************
+!important overrides normal specificity rules.
+
+Avoid using it unless absolutely necessary because it makes CSS harder to maintain.
+
+p {
+    color: red !important;
+}
+
+
+
+
+-->

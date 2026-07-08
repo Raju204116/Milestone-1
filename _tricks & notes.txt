@@ -1,6 +1,7 @@
 
-
+*************************************
 <!-- Tips & Tricks -->
+*************************************
 
 1.(ctrl + /) for auto comment & uncomment 
 2.run the site by clicking the html file inside Module-1 (mypc) 
@@ -18,7 +19,21 @@ type : ctrl + j   //terminal will open
 
 8.text-align: center;   // Not only the text, but also the whole content of a box/div will go to center
 
+7. type: link:css then tab
+  result :  <link rel="stylesheet" href="style.css">
+NB: external file/folder add করার ক্ষেত্রে  ডট স্লাশ (./) ইউজ করতে হবে ।
+তাহলে deploy এর সময় perfect ভাবে কাজ করবে । (./style/style.css  or   ./images)
 
+
+
+
+
+
+
+
+*************************************
+<!-- Notes -->
+*************************************
 
 HTML4 vs HTML5 (interview)
 

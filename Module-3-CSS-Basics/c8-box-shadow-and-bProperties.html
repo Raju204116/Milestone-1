@@ -1,0 +1,193 @@
+<!-- 
+ ***************box-shadow****************
+The box-shadow property adds a shadow around an element.
+
+//syntax: (HVBSC)
+box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color;
+
+.box {
+    box-shadow: 5px 5px 10px 3px gray;  // HVBSC
+}
+
+| Property              | Description                            |
+| -----------------     | -------------------------------------- |
+| Horizontal Offset(x)  | Shadow moves left (-) or right (+)     |
+| Vertical Offset(y)    | Shadow moves up (-) or down (+)        |
+| Blur Radius           | Makes the shadow softer                |
+| Spread Radius         | Increases or decreases the shadow size |
+| Color                 | Shadow color                           |
+
+
+
+
+Types :
+
+| Property     | Example                                   | Purpose             |
+| ------------ | ----------------------------------------- | ------------------- |
+| Basic shadow | `box-shadow: 5px 5px black;`              | Simple shadow       |
+| Blur         | `box-shadow: 5px 5px 10px gray;`          | Soft shadow         |
+| Spread       | `box-shadow: 5px 5px 10px 3px gray;`      | Control shadow size |
+| Inset        | `box-shadow: inset 0 0 10px gray;`        | Inner shadow        |
+| Multiple     | `box-shadow: 0 0 5px red, 0 0 10px blue;` | Multiple shadows    |
+
+box-shadow: 0 5px 15px gray; // x(0) y blur color
+
+
+
+
+*******************Background Properties*********************
+
+| Property                | Example                                 | Purpose                                      |
+| ----------------------- | --------------------------------------- | -------------------------------------------- |
+| `background-image`      | `url("image.jpg")`                      | Sets the background image                    |
+| `background-repeat`     | `no-repeat`                             | Prevents repeating                           |
+| `background-size`       | `cover`                                 | Fills the element with the image             |
+| `background-position`   | `center`                                | Centers the image                            |
+| `background-attachment` | `fixed`                                 | Creates a fixed background effect            |
+| `background-color`      | `lightblue`                             | Sets a background color                      |
+| `background`            | `url("img.jpg") no-repeat center/cover` | Shorthand for multiple background properties |
+
+
+
+//details : 
+
+✅1. background-image
+The background-image property sets an image as an element's background.
+
+//syntax : background-image: url("image.jpg");
+
+//ex :
+body {
+    background-image: url("background.jpg");
+}
+
+
+
+✅2. background-repeat : Controls whether the image repeats.
+
+background-repeat: repeat;
+background-repeat: no-repeat;
+
+| Value       | Description                                  |
+| ----------- | -------------------------------------------- |
+| `repeat`    | Default; repeats horizontally and vertically |
+| `repeat-x`  | Repeats horizontally only                    |
+| `repeat-y`  | Repeats vertically only                      |
+| `no-repeat` | Shows the image only once                    |
+
+
+✅3. background-size : Controls the image size.
+
+background-size: cover;
+
+| Value         | Description                             |
+| ------------- | --------------------------------------- |
+| `cover`       | Fills the element, may crop the image   |
+| `contain`     | Fits the whole image inside the element |
+| `100% 100%`   | Stretches the image to fill the element |
+| `300px 200px` | Fixed width and height                  |
+
+
+
+
+✅4. background-position : Positions the image.
+
+background-position: center;
+background-position: top;
+background-position: bottom;
+background-position: left;
+background-position: right;
+background-position: center center;
+
+
+✅5. background-attachment : Controls whether the background scrolls.
+
+background-attachment: fixed;
+
+| Value    | Description                                   |
+| -------- | --------------------------------------------- |
+| `scroll` | Default; background scrolls with the page     |
+| `fixed`  | Background stays fixed while the page scrolls |
+| `local`  | Background scrolls with the element's content |
+
+
+✅6. background-color : Sets a background color.
+
+background-color: lightblue;
+
+
+
+✅Shorthand
+.hero {
+    background: url("nature.jpg") no-repeat center/cover;
+}
+
+
+
+-->
+
+<!-- coding example -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & Background</title>
+    <style>
+        .card {
+            width: 200px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px;
+            /* x y blur */
+
+        }
+
+        .hero {
+            width: 100%;
+            height: 400px;
+            /* height: 100vh; */
+
+            /* background-image: url(../images/hero.jpg);   */
+            /*   ../ means go to previous folder */
+
+            background-image: url(../images/lap.png);
+            background-repeat: no-repeat;
+            block-size: cover;
+            background-position: center;
+
+
+            color: white;
+            /* this is text color */
+            text-align: center;
+            line-height: 50px;
+            /* from top  */
+
+           
+
+        }
+    </style>
+
+<body>
+
+    <!-- shadow card -->
+    <div class="card">
+        Card
+    </div>
+
+
+    <!-- background image-->
+    <div class="hero">
+        <h1>Welcome</h1>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

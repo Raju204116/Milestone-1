@@ -1,0 +1,230 @@
+<!--
+✅ CSS Flexbox
+Flexbox (Flexible Box Layout) is a CSS layout model used to arrange elements in rows or columns, align them, distribute space between them, and create responsive layouts.
+
+NB: Flex শুধু row অথবা column wise কাজ করবে । অর্থাৎ একই সময়ে কেবলমাত্র এক ডিরেকশনে কাজ করতে পারবে , দুইদিকে নয় ।
+একইসাথে row and column বরাবর কাজ করার জন্য grid ব্যবহার করতে হবে । 
+
+//Basic Structure : A Flexbox layout has two parts:
+
+1.Flex Container (Parent)
+2.Flex Items (Children)
+
+<div class="container">  //parent
+    <div class="box">1</div>  //children
+    <div class="box">2</div>
+    <div class="box">3</div>
+</div>
+
+.container {
+    display: flex;
+}
+
+//output: 
++-----+ +-----+ +-----+
+|  1  | |  2  | |  3  |
++-----+ +-----+ +-----+
+
+
+
+✅1.Flex Container Properties
+
+| Property          | Purpose                               |
+| ----------------- | ------------------------------------- |
+| `display: flex`   | Creates a flex container              |
+| `flex-direction`  | Sets row or column layout             |
+| `justify-content` | Aligns items on the main axis         |
+| `align-items`     | Aligns items on the cross axis        |
+| `flex-wrap`       | Allows items to wrap                  |
+| `gap`             | Adds space between items              |
+| `align-content`   | Aligns multiple rows of wrapped items |
+
+
+
+********details************
+
+1. display: flex    //Turns an element into a flex container.      
+
+2. flex-direction   //Controls the direction of the items.
+
+| Value            | Description            |
+| ---------------- | ---------------------- |
+| `row`            | Left → Right (default) |
+| `row-reverse`    | Right → Left           |
+| `column`         | Top → Bottom           |
+| `column-reverse` | Bottom → Top           |
+
+
+3. justify-content   // Aligns items along the main axis (x).
+
+| Value           | Result                    |
+| --------------- | ------------------------- |
+| `flex-start`    | Start (default)           |
+| `center`        | Center                    |
+| `flex-end`      | End                       |
+| `space-between` | Equal space between items |
+| `space-around`  | Equal space around items  |
+| `space-evenly`  | Equal space everywhere    |
+
+
+4. align-items   //Aligns items along the cross axis (y).
+
+| Value        | Description          |
+| ------------ | -------------------- |
+| `stretch`    | Default              |
+| `flex-start` | Top                  |
+| `center`     | Center               |
+| `flex-end`   | Bottom               |
+| `baseline`   | Align text baselines |
+
+
+
+5. flex-wrap  //Controls whether items wrap to the next line.
+
+Values:
+
+nowrap (default)
+wrap
+wrap-reverse
+
+.container {
+    flex-wrap: wrap;
+}
+
+
+6. gap   //Adds spacing between flex items.
+
+.container {
+    gap: 20px;
+}
+
+
+7. align-content  //Aligns multiple rows of wrapped items.
+Works only when flex-wrap: wrap; creates multiple rows.
+
+.container {
+    align-content: center;
+}
+
+
+
+
+✅2.Flex Item Properties
+
+| Property      | Purpose                                     |
+| ------------- | ------------------------------------------- |
+| `flex-grow`   | Controls how much an item grows             |
+| `flex-shrink` | Controls how much an item shrinks           |
+| `flex-basis`  | Sets the initial size of an item            |
+| `flex`        | Shorthand for `grow`, `shrink`, and `basis` |
+| `align-self`  | Overrides alignment for one item            |
+
+
+**********details************
+1. flex-grow //Controls how much an item grows.
+
+.box1 {
+    flex-grow: 1;
+}
+
+.box2 {
+    flex-grow: 2;
+}
+//Box 2 grows twice as much as Box 1.
+
+
+2. flex-shrink   //Controls how much an item shrinks.
+
+.box {
+    flex-shrink: 1;
+}
+
+3. flex-basis  //Sets the initial size of an item.
+
+.box {
+    flex-basis: 200px;
+}
+
+
+4. flex    //Shorthand of grow, shrink, basis
+
+syntax
+flex: grow shrink basis;
+
+flex: 1 1 200px;
+
+
+5. align-self   //Overrides align-items for a single item.
+
+.box {
+    align-self: center;
+}
+
+
+
+
+✅ Center an Element
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+-->
+
+<!-- coding example -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+
+            /* width: 100%; no need*/
+            height: 50vh;
+            border: 5px solid red;
+            background-color: aquamarine;
+            gap: 3px;
+
+            
+        } 
+        .box{
+            border: 5px solid blue;
+            background-color: lightblue;
+
+            width: 70px;
+            height: 70px;
+            text-align: center; /* horizontal center */
+            line-height: 70px;  /* vertical center */
+            
+        } 
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- div.container>div*3.box{item-$} -->
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+    </div>
+
+</body>
+
+</html>

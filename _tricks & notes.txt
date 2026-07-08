@@ -19,12 +19,12 @@ type : ctrl + j   //terminal will open
 
 8.text-align: center;   // Not only the text, but also the whole content of a box/div will go to center
 
-7. type: link:css then tab
+9. type: link:css then tab
   result :  <link rel="stylesheet" href="style.css">
 NB: external file/folder add করার ক্ষেত্রে  ডট স্লাশ (./) ইউজ করতে হবে ।
 তাহলে deploy এর সময় perfect ভাবে কাজ করবে । (./style/style.css  or   ./images/rj.jpg)
 
-
+10.Use css emmet[ > ^ + $ . * # {} ()  ] to write shortcut code . (class-4-1)
 
 
 
@@ -80,3 +80,6 @@ Inline = In Line ➡️ → Stays in the same line as surrounding content.
 Cascading means সিরিয়াল মেইনটেইন করবে । অর্থাৎ উপর থেকে নিচের দিকে কাজ করবে ।
 তবে  একই নামে দুইটি Property(h1{color:red} h1{color:green}) থাকলে পরেরটা ইউজ হবে;
 আর External CSS সর্বদা Internal CSS কে Override করবে ।
+
+
+✅5.Flex vs Grid

@@ -1,0 +1,241 @@
+<!-- 
+************1. display ******************
+The display property controls how an element is displayed and whether it occupies space in the layout.
+
+Common Values:
+
+| Value          | Description                                               |
+| -------------- | --------------------------------------------------------- |
+| `block`        | Starts on a new line and takes the full available width.  |
+| `inline`       | Stays in the same line and takes only the required width. |
+| `inline-block` | Stays in the same line but allows `width` and `height`.   |
+| `flex`         | Creates a flex container.                                 |
+| `grid`         | Creates a grid container.                                 |
+| `none`         | Hides the element and removes it from the layout.         |
+
+
+///details : 
+
+
+✅a.Examples of block elements: <div>,<p>,<h1> - <h6>,<section>,<article>,
+<header>,<footer>
+
+div {
+    display: block;
+}
+
+
+
+✅b. Inline :Ekhane width & height dileo kaj korbe na. Etai inline er character. 
+          /* inline elements ignore width and height. */
+
+Examples of inline elements: <span>,<a>,<strong>,<em>
+
+span {
+    display: inline;
+}
+
+
+
+
+✅c.inline-block : Stays on the same line. but,  width and height work
+
+//html
+<div class="box">One</div>
+<div class="box">Two</div>
+
+//css
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+//output
++-----+  +-----+
+| One |  | Two |
++-----+  +-----+
+
+✅d. display : none  //  ‍জায়গা(মেমোরি) সহ ফুল element/section ডিলেট করে দিবে ।
+
+<p>Paragraph 1</p>
+<p class="hide">Paragraph 2</p>
+<p>Paragraph 3</p>
+
+.hide {
+    display: none;
+}
+
+//output   //Paragraph 2 is completely removed.
+Paragraph 1
+Paragraph 3
+
+
+
+
+
+**************2.visibility*****************************
+The visibility property controls whether an element is visible, while keeping its place in the layout.
+
+Common Values:
+
+| Value     | Description                                     |
+| --------- | ----------------------------------------------- |
+| `visible` | Default; the element is shown.                  |
+| `hidden`  | Hides the element but keeps its space reserved. |
+
+
+///details : 
+
+✅a. visible  // normally always visible (by default)
+
+.visible {
+    visibility: visible;
+}
+
+
+
+✅b.visibility: hidden  // জায়গা রাখবে , কিন্তু element/section ডিলেট করে দিবে ।
+
+<p>Paragraph 1</p>
+<p class="hide">Paragraph 2</p>
+<p>Paragraph 3</p>
+
+.hide {
+    visibility: hidden;
+}
+
+
+//output ; 
+Paragraph 1
+(blank space where Paragraph 2 would be)
+Paragraph 3
+
+
+
+
+ -->
+
+<!-- Coding Example -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Visibility </title>
+
+    <style>
+        /* display */
+        .display-item {
+            border: 5px solid red
+        }
+
+        .display-item .hide {
+            display: none;
+        }
+
+
+        /* visibility */
+        .visibility-item {
+            border: 5px solid green;
+            margin-top: 10px;
+        }
+
+        .visibility-item .hide2 {
+            visibility: hidden;
+
+        }
+
+
+        /* inline */
+        .inline-box {
+            display: inline;
+            width: 120px;
+            height: 50px;
+            background-color: aqua;
+            border: 3px solid red;
+        }
+
+        /*NB: ekhane width & height dileo kaj korbe na. Etai inline er character.  */
+        /* inline elements ignore width and height. */
+
+
+
+        /* block */
+        .block-box {
+            display: block;
+            width: 120px;
+            height: 50px;
+            background-color: aqua;
+            border: 3px solid red;
+        }/* uses the same property as inlline , but see the change at output */
+
+
+
+        /* inline-block */
+        .inline-block-box {
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            background-color: aqua;
+            border: 3px solid red;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <h2>This is display Example</h2>
+    <div class="display-item">
+        <p>This is para 1</p>
+        <p class="hide">This is para 2</p>
+        <p>This is para 3</p>
+
+    </div>
+
+    <h2>This is Visibility Example</h2>
+    <div class="visibility-item">
+        <p>This is para 1</p>
+        <p class="hide2">This is para 2</p>
+        <p>This is para 3</p>
+    </div>
+
+
+    <h2>Inline Example</h2>
+    <div>
+        <span class="inline-box"> Box-1</span>
+        <span class="inline-box"> Box-2</span>
+        <span class="inline-box"> Box-3</span>
+
+    </div>
+
+
+    <h2>Block Example</h2>
+    <div>
+        <div class="block-box">Box-1</div>
+        <div class="block-box">Box-2</div>
+        <div class="block-box">Box-3</div>
+    </div>
+
+
+    <h2>Inline-Block Example</h2>
+    <div>
+        <div class="inline-block-box">Box-1</div>
+        <div class="inline-block-box">Box-2</div>
+        <div class="inline-block-box">Box-3</div>
+    </div>
+
+
+
+
+</body>
+
+</html>

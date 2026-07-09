@@ -17,7 +17,7 @@ NB: Flex শুধু row অথবা column wise কাজ করবে । �
 </div>
 
 .container {
-    display: flex;
+    display: flex;  //it will create a container (defaultly: row )
 }
 
 //output: 
@@ -43,9 +43,9 @@ NB: Flex শুধু row অথবা column wise কাজ করবে । �
 
 ********details************
 
-1. display: flex    //Turns an element into a flex container.      
+👍1. display: flex    //Turns an element into a flex container.      
 
-2. flex-direction   //Controls the direction of the items.
+👍2. flex-direction   //Controls the direction of the items.
 
 | Value            | Description            |
 | ---------------- | ---------------------- |
@@ -55,7 +55,7 @@ NB: Flex শুধু row অথবা column wise কাজ করবে । �
 | `column-reverse` | Bottom → Top           |
 
 
-3. justify-content   // Aligns items along the main axis (x).
+👍3. justify-content   // Aligns items along the main axis (x).
 
 | Value           | Result                    |
 | --------------- | ------------------------- |
@@ -67,7 +67,7 @@ NB: Flex শুধু row অথবা column wise কাজ করবে । �
 | `space-evenly`  | Equal space everywhere    |
 
 
-4. align-items   //Aligns items along the cross axis (y).
+👍4. align-items   //Aligns items along the cross axis (y).
 
 | Value        | Description          |
 | ------------ | -------------------- |
@@ -79,7 +79,7 @@ NB: Flex শুধু row অথবা column wise কাজ করবে । �
 
 
 
-5. flex-wrap  //Controls whether items wrap to the next line.
+👍5. flex-wrap  //Controls whether items wrap to the next line.
 
 Values:
 
@@ -92,14 +92,14 @@ wrap-reverse
 }
 
 
-6. gap   //Adds spacing between flex items.
+👍6. gap   //Adds spacing between flex items.
 
 .container {
     gap: 20px;
 }
 
 
-7. align-content  //Aligns multiple rows of wrapped items.
+👍7. align-content  //Aligns multiple rows of wrapped items.
 Works only when flex-wrap: wrap; creates multiple rows.
 
 .container {
@@ -121,7 +121,7 @@ Works only when flex-wrap: wrap; creates multiple rows.
 
 
 **********details************
-1. flex-grow //Controls how much an item grows.
+👍1. flex-grow //Controls how much an item grows.
 
 .box1 {
     flex-grow: 1;
@@ -133,20 +133,20 @@ Works only when flex-wrap: wrap; creates multiple rows.
 //Box 2 grows twice as much as Box 1.
 
 
-2. flex-shrink   //Controls how much an item shrinks.
+👍2. flex-shrink   //Controls how much an item shrinks.
 
 .box {
     flex-shrink: 1;
 }
 
-3. flex-basis  //Sets the initial size of an item.
+👍3. flex-basis  //Sets the initial size of an item.
 
 .box {
     flex-basis: 200px;
 }
 
 
-4. flex    //Shorthand of grow, shrink, basis
+👍4. flex    //Shorthand of grow, shrink, basis
 
 syntax
 flex: grow shrink basis;
@@ -154,7 +154,7 @@ flex: grow shrink basis;
 flex: 1 1 200px;
 
 
-5. align-self   //Overrides align-items for a single item.
+👍5. align-self   //Overrides align-items for a single item.
 
 .box {
     align-self: center;

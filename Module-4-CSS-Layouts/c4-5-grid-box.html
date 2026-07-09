@@ -1,0 +1,268 @@
+
+<!-- 
+✅ CSS Grid
+CSS Grid is a layout system used to arrange elements into rows and columns. 
+It is ideal for building two-dimensional layouts such as galleries, dashboards, page layouts, and card grids.
+
+Flexbox is mainly for one-dimensional layouts (row or column).
+Grid is for two-dimensional layouts (rows and columns).
+
+
+//Basic Structure
+
+A Grid layout has 2 parts
+
+1.Grid Container (Parent)
+2.Grid Items (Children)
+
+<div class="container">  //parent
+    <div class="box">1</div>  //children
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+
+.container {
+    display: grid;             //it will create a container
+    grid-template-columns: 200px 200px 200px;  // it will create 3 columns
+}
+
+//output : 
++-----+-----+-----+
+|  1  |  2  |  3  |
++-----+-----+-----+
+|  4  ||  5  |
++-----++-----+
+
+
+
+
+
+
+✅1.Grid Container Properties
+
+| Property                | Purpose                                   |
+| ----------------------- | ----------------------------------------- |
+| `display: grid`         | Creates a grid container                  |
+| `grid-template-columns` | Defines the number and width of columns   |
+| `grid-template-rows`    | Defines the height of rows                |
+| `justify-items`         | Aligns items horizontally inside cells    |
+| `align-items`           | Aligns items vertically inside cells      |
+| `place-items`           | Shorthand for justify-items + align-items |
+| `gap`                   | Adds space between grid items             |
+
+| `justify-content`       | Aligns the entire grid horizontally inside the container      |
+| `align-content`         | Aligns the entire grid vertically inside the container.     |
+| `place-content`         | shorthand for justify-content & align-content|
+
+
+
+
+*********details************
+
+👍1. display: grid  //Turns an element into a grid container.
+
+.container {
+    display: grid;
+}
+
+
+👍2. grid-template-columns  //Defines the number and width of columns.
+//units : px, fr(fraction of the viewport) 
+
+.container {
+    grid-template-columns: 200px 200px 200px;  //Creates 3 columns, each 200px wide.
+}
+
+grid-template-columns: 1fr 2fr 1fr;   // 25% 50% 25%
+or,
+grid-template-columns: repeat(3, 1fr);  // 3 columns with 1fr
+
+
+👍3. grid-template-rows   //Defines the height of rows.
+
+.container {
+    grid-template-rows: 100px 150px;  //row-1:100px , row-2 : 150px
+}
+
+👍4. justify-items  //Aligns items horizontally inside each grid cell.
+.container {
+    justify-items: center;
+}
+
+//Values:start, center, end, stretch (default)
+
+
+👍5. align-items  //Aligns items vertically inside each grid cell.
+
+.container {
+    align-items: center;
+}
+
+
+👍6. place-items    //Centers items horizontally and vertically
+
+//It's a  shorthand for justify-items & align-items
+
+.container {
+    place-items: center;
+}
+
+
+👍7. gap  //Adds spacing between rows and columns.
+
+.container {
+    gap: 20px;
+}
+
+row-gap: 20px;
+column-gap: 30px;
+
+
+👍8. justify-content  //Aligns the entire grid horizontally inside the container when the grid is smaller than the container.
+
+.container {
+    justify-content: center;
+}
+
+👍9. align-content  //Aligns the entire grid vertically inside the container.
+
+.container {
+    align-content: center;
+}
+
+
+👍10. place-content  // shorthand for justify-content & align-content
+
+place-content: center;
+
+
+
+
+
+✅2.Grid Item Properties
+
+These properties control individual grid items.
+
+| Grid Item (Child) | Purpose                                     |
+| ----------------- | ------------------------------------------- |
+| `grid-column`     | Span or position across columns             |
+| `grid-row`        | Span or position across rows                |
+| `grid-area`       | Shorthand for row/column placement          |
+| `justify-self`    | Align one item horizontally                 |
+| `align-self`      | Align one item vertically                   |
+| `place-self`      | Shorthand for `justify-self` + `align-self` |
+
+********details********
+
+
+👍1. grid-column  //Makes an item span multiple columns.
+
+.item1 {
+    grid-column: 1 / 3;
+}
+
+//Output: //The first item spans columns 1 and 2.
++-----------+-----+
+|     1     |     |
++-----------+-----+
+| 2 | 3 | 4 |
+
+
+
+👍2. grid-row  //Makes an item span multiple rows.
+
+.item1 {
+    grid-row: 1 / 3;
+}
+
+//output : The first item spans rows 1 and 2.
+
++----+----+
+| 1  | 2  |
+|    +----+
+|    | 3  |
++----+----+
+
+
+
+👍3. grid-area  //Shorthand for positioning an item.
+
+.item1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+//meaning : row-start / column-start / row-end / column-end
+
+ 
+👍4. justify-self  //Aligns one item horizontally inside its own grid cell.
+
+.item1 {
+    justify-self: center;
+}
+
+//Values:start, center, end, stretch (default)
+
+
+👍5. align-self  //Aligns one item vertically inside its own grid cell.
+
+.item1 {
+    align-self: center;
+}
+
+👍6. place-self   //shorthand for : justify-self & align-self
+.item1 {
+    place-self: center;
+}
+
+
+
+-->
+
+
+<!-- Coding Example -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grid Box</title>
+
+    <style>
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+        /* place-items: center; */
+        border: 5px solid red;
+        padding: 10px;
+        background-color: aquamarine;
+
+    }
+
+    .item{
+        border: 4px solid blue;
+        padding: 2px;
+        background-color: rgb(15, 245, 53);
+        
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- div.container>div*5.item{item-$} -->
+    <div class="container">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+    </div>
+
+</body>
+</html>

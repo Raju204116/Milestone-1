@@ -82,4 +82,12 @@ Cascading means সিরিয়াল মেইনটেইন করবে । 
 আর External CSS সর্বদা Internal CSS কে Override করবে ।
 
 
-✅5.Flex vs Grid
+✅5.Flexbox vs Gridbox
+
+| Feature         | Flexbox             | Grid                         |
+| --------------- | ------------------- | ---------------------------- |
+| Layout          | One-dimensional     | Two-dimensional              |
+| Direction       | Row **or** Column   | Rows **and** Columns         |
+| Best For        | Navbar, Hero, Menus | Galleries, Dashboards, Cards |
+| Alignment       | Excellent           | Excellent                    |
+| Complex Layouts | Harder              | Easier                       |

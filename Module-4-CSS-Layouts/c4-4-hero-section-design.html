@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(153, 196, 171);
+            font-family: Arial, sans-serif;
+        }
+
+        /* nav design start */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 10px;
+            background-color: rgb(133, 204, 183);
+        }
+
+        nav ul {
+            display: flex;
+            /* justify-content: space-between; */
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            
+        }
+
+        /* nav design end */
+
+        /* hero-section design start */
+
+        header{
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            gap: 50px  ;
+
+            padding: 60px 80px; 
+            background-color: rgb(101, 150, 103);
+            min-height: 70vh;
+
+        }
+
+        /* left-side */
+        .hero-content{
+            flex: 1;   /* child property : flex-grow/shrink*/
+            text-align: center; 
+            
+        }
+
+        .hero-content p{
+            max-width: 500px;
+            margin: 20px auto;
+            line-height: 1.7;
+            font-size: 17px;
+            color: #fffefe;
+        }
+
+        .hero-content button{
+            background-color: rgb(238, 102, 102);
+            padding: 10px 20px ;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            border:none
+            
+        }
+        .hero-content button:hover{
+            background-color: #fff;
+            transition: 0.3s;
+        }
+
+        .hero-content button a{
+            text-decoration: none;
+        }
+
+        /* right side */
+        .hero-img{
+            flex: 1;
+        }
+
+        .hero-img img{
+            width: 100%;
+            display: block;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav>
+        <h2><a href="">Raju</a></h2>
+
+        <ul>
+            <li> <a href="./c4-4-hero-section-design.html">Home </a></li>
+            <li><a href="./c4-1-emmet.html">About </a></li>
+            <li><a href="./c4-2-flex-box.html">Contact Us</a></li>
+            <li><a href="./c4-3-nav-bar-design.html">Sign Up</a></li>
+        </ul>
+
+    </nav>
+
+    <header>
+        <!-- div.hero-content>h2+p+button -->
+        <div class="hero-content">
+            <h2>Welcome </h2>
+            <p> This is my Hero Section. This is the most important part of a website.
+                We can show any important things here.
+            </p>
+            <button> <a href="">Buy Now</a> </button>
+        </div>
+
+        <div class="hero-img">
+            <img src="../images/lap.png" alt="">
+        </div>
+    </header>
+
+
+
+</body>
+
+</html>

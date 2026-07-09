@@ -1,0 +1,151 @@
+<!-- 
+ 
+✅What is a Table?
+
+A table organizes information into rows and columns.
+
+Basic Table Structure :
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+
+    <tr>
+        <td>Raju</td>
+        <td>25</td>
+    </tr>
+
+    <tr>
+        <td>Rahim</td>
+        <td>24</td>
+    </tr>
+</table>
+
+
+Important Table Tags :
+| Tag         | Full Form    | Purpose                   |
+| ----------- | ------------ | ------------------------- |
+| `<table>`   | Table        | Creates the table         |
+| `<tr>`      | Table Row    | Creates a row             |
+| `<th>`      | Table Header | Creates a header cell     |
+| `<td>`      | Table Data   | Creates a data cell       |
+| `<caption>` | Caption      | Adds a title to the table |
+| `<thead>`   | Table Head   | Groups the header rows    |
+| `<tbody>`   | Table Body   | Groups the main data rows |
+| `<tfoot>`   | Table Footer | Groups the footer rows    |
+| `colspan`   | Cell Merger  | Makes a cell span multiple columns.    |
+| `rowspan`   | Cell Merger  | Makes a cell span multiple rows.    |
+
+
+
+Modern Best Practices
+✅ Use tables only for tabular data (marks, reports, schedules, invoices).
+❌ Don't use tables to design page layouts. Use CSS Flexbox or CSS Grid instead.
+✅ Use CSS for styling instead of HTML attributes like border
+
+-->
+
+<!-- coding example -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+
+
+ <!-- sample table -->
+
+    <table border="1">
+        <caption> This is a database table</caption>
+        
+        <thead>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Student Id</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Raju</td>
+                <td>CSE</td>
+                <td>204116</td>   
+            </tr>
+           
+            <tr>
+                <td>Sohan</td>
+                <td>Civil</td>
+                <td>214523</td>   
+            </tr>
+           
+            <tr>
+                <td>Sagor</td>
+                <td>Mechanical</td>
+                <td>224561</td>   
+            </tr>
+           
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Student</td>
+                <td> 03</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+
+
+
+    <br>
+    <br>
+    <!-- colspan -->
+    <table border="1">
+        <tr>
+            <th colspan="2">Student Information</th>
+        </tr>
+
+        <tr>
+            <td>Raju</td>
+            <td>CSE</td>
+        </tr>
+    </table>
+
+
+
+
+    <br>
+    <!-- rowspan -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Raju</td>
+            <td>Math</td>
+        </tr>
+
+        <tr>
+            <td>Physics</td>
+        </tr>
+    </table>
+
+
+   
+
+
+</body>
+
+</html>

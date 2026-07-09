@@ -1,30 +1,32 @@
 
 *************************************
-✅<!-- Tips & Tricks -->
+✅<!-- Tips & Tricks -->✅
 *************************************
 
-1.(ctrl + /) for auto comment & uncomment 
-2.run the site by clicking the html file inside Module-1 (mypc) 
-3. or Right click in any free space inside code , open with live server  
+👍 1.(ctrl + /) for auto comment & uncomment 
+👍 2.run the site by clicking the html file inside Module-1 (mypc) 
+👍 3. or Right click in any free space inside code , open with live server  
 
-4.( alt+ shift+ down arrow ): for duplicating any line or block -->
+👍 4.( alt+ shift+ down arrow ): for duplicating any line or block -->
 
-5. shift + 1(!), then tab : for full html syntax 
+👍 5. shift + 1(!), then tab : for full html syntax 
+      shift + alt + f : for proper documenting
 
-6.<p>lorem10 tab : dile 10 word er ekta para auto hoye jabe</p> 
+👍 6.<p>lorem10 tab : dile 10 word er ekta para auto hoye jabe</p> 
 
-7.In any file of  VsCode 
-type : ctrl + j   //terminal will open
+👍 7.In any file of  VsCode 
+  type : ctrl + j   //terminal will open
 
 
-8.text-align: center;   // Not only the text, but also the whole content of a box/div will go to center
+👍8.text-align: center;   // Not only the text, but also the whole content of a box/div will go to center
 
-9. type: link:css then tab
+👍 9. type: link:css then tab
   result :  <link rel="stylesheet" href="style.css">
-NB: external file/folder add করার ক্ষেত্রে  ডট স্লাশ (./) ইউজ করতে হবে ।
-তাহলে deploy এর সময় perfect ভাবে কাজ করবে । (./style/style.css  or   ./images/rj.jpg)
 
-10.Use css emmet[ > ^ + $ . * # {} ()  ] to write shortcut code . (class-4-1)
+ NB: external file/folder add করার ক্ষেত্রে  ডট স্লাশ (./) ইউজ করতে হবে ।
+ তাহলে deploy এর সময় perfect ভাবে কাজ করবে । (./style/style.css  or   ./images/rj.jpg)
+
+👍 10.Use css emmet[ > ^ + $ . * # {} ()  ] to write shortcut code . (class-4-1)
 
 
 
@@ -32,10 +34,10 @@ NB: external file/folder add করার ক্ষেত্রে  ডট স�
 
 
 *************************************
-<!-- Notes -->
+✅<!-- Notes -->✅
 *************************************
 
-✅1.HTML4 vs HTML5 (interview)
+👍1.HTML4 vs HTML5 (interview)
 
 | Feature               | HTML4                         | HTML5                                                                                |
 | --------------------- | ----------------------------- | ------------------------------------------------------------------------------------ |
@@ -52,14 +54,14 @@ NB: external file/folder add করার ক্ষেত্রে  ডট স�
 
 
 
-✅2.(most important)
+👍2.(most important)
 display : none    //  ‍জায়গা(মেমোরি) সহ ফুল element/section ডিলেট করে দিবে ।
 visibility: hidden  // জায়গা রাখবে , কিন্তু element/section ডিলেট করে দিবে ।
 
 
 
 
-✅3.inline element & block element (interview)
+👍3.inline element & block element (interview)
 //see class-c7
 
 | Block Element                                     | Inline Element                                  |
@@ -76,13 +78,13 @@ Inline = In Line ➡️ → Stays in the same line as surrounding content.
 
 
 
-✅4.CSS (Cascading Style Sheets)
+👍4.CSS (Cascading Style Sheets)
 Cascading means সিরিয়াল মেইনটেইন করবে । অর্থাৎ উপর থেকে নিচের দিকে কাজ করবে ।
 তবে  একই নামে দুইটি Property(h1{color:red} h1{color:green}) থাকলে পরেরটা ইউজ হবে;
 আর External CSS সর্বদা Internal CSS কে Override করবে ।
 
 
-✅5.Flexbox vs Gridbox
+👍5.Flexbox vs Gridbox
 
 | Feature         | Flexbox             | Grid                         |
 | --------------- | ------------------- | ---------------------------- |

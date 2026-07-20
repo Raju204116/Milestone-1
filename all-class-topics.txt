@@ -1,0 +1,254 @@
+
+
+📌📌📌📌📌📌📌📌 Milestone-1 : Html & CSS 📌📌📌📌📌📌📌
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+✅✅Module-1:html basic
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+✅c-1-connect with gpt
+Set chat-gpt as a Mentor
+
+✅c-2-first-page
+Introduction to tags 
+paragraph tag
+break tag
+
+
+✅c-3-headings & list
+Heading tags
+bold
+italic
+strong tag
+list tags 
+ordered list 
+unordered list
+
+
+✅c-4-anchor & image
+anchor tag(normal, target blank, mail to)
+href tag 
+image tag
+
+✅c-5-forms & inputs
+Input tags : input types, placeholder. 
+form tags: select tags,option tag, label, textarea.
+hr tag, button tag
+
+✅c-6-file-structure
+Basic syntax of Html file
+
+
+✅c-7-semantic tags
+Semantic Tag : 
+<header>,<nav>,<main>,<section>,<article>,<aside>,
+<footer>
+
+Non-semantic Tags :
+<div>, <span>
+
+✅c-8-revision all html tags
+Document Structure
+Text Content
+Links & Images
+Lists
+Containers
+Tables
+Forms
+Multimedia
+Miscellaneous (বিবিধ)
+
+
+✅c-9-html5 multimedia tags
+audio tags
+video tags
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+✅✅Module-2: git & github
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+✅c-1-git vs github & vcs
+git
+github
+Version Control System (vcs)
+
+✅c2-5-git commands
+Create repository 
+Commit & push
+
+✅c8-9-github Advanced
+fork
+pull
+contributor
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+✅✅Module-3: css basics
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+✅c-1-css types
+Basic theory
+Inline css
+Internal css
+External css
+
+✅c-2-3-css selectors
+Element/tag Selector
+Class Selector(.)
+Id Selector(#)
+Universal Selector (*)
+Group Selector (,)
+
+
+✅c-4a-css measuring units
+Fixed units: px, cm, mm, in, pt, pc 
+Relative units : %, em, rem, fr, vw, vh, vmin, vmax,ch
+
+✅c-4b-css font properties
+color
+font-size
+font-family
+font-weigh
+font-style
+text-align
+text-decoration
+text-transform
+line-height
+letter-spacing
+word-spacing
+text-indent
+text-shadow
+text-overflow
+vertical-align
+
+✅c-5-advanced selectors
+Group selector 
+Immediate child 
+use of multiple class at a time
+
+✅c-6-css box model
+border
+margin
+padding
+
+✅c-7-css display & visibility properties
+display : block, inline, inline-block, flex, grid, none
+visibility : visible, hidden.
+
+✅c-8-box shadow & background properties
+box shadow :x,y, blur, spread, color
+bg properties : 
+background-image
+background-repeat
+background-size
+background-position
+background-attachment
+background-color
+background
+
+✅c-9-css specificity(priority)
+Inline style  
+ID (`#id`) 
+Class, Attribute (`[type]`), Pseudo-class (`:hover`)
+Element (`p`, `h1`) and Pseudo-element (`::before`) 
+Universal (`*`)  
+
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+✅✅Module-4: css layouts
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+✅c-1-emmet
+>, +, *, ., #, [], {}, (), ^ , &
+
+✅c-2-css flex box
+
+Container Properties : 
+display: flex
+flex-direction
+justify-content
+align-items
+flex-wrap
+gap
+align-content
+
+Item Properties:
+flex-grow
+flex-shrink
+align-self
+
+
+
+✅c3-navbar design
+mix of html & css
+
+✅c-4-hero section design
+mix of html & css
+
+✅c-5-css grid box
+
+Container Properties :
+display: grid
+grid-template-columns
+grid-template-rows
+justify-items
+align-items
+place-items
+gap
+justify-content
+align-content
+place-content
+
+Item Properties :
+grid-column
+grid-row
+grid-area
+justify-self
+align-self
+place-self
+
+
+✅c-6-calendar design
+uses of grid
+
+✅c-7-css positioning
+static
+relative
+absolute
+fixed
+sticky
+
+
+✅c-8-table properties
+<table>
+<tr>
+<th>
+<td>
+<caption>
+<thead>
+<tbody>
+<tfoot>
+colspan
+rowspan
+
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+✅✅Module-5: Portfolio design
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+uses of html & css
+
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+✅✅Module-6: Assignment-1
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+uses of html & css
+
+
+
+
+

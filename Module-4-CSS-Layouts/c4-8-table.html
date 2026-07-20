@@ -56,6 +56,28 @@ Modern Best Practices
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+
+    <style>
+
+        table{
+            border-collapse: collapse;
+            
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th{
+            background-color: antiquewhite;
+        }
+
+        tfoot{
+            font-size: 1.3rem;
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -63,7 +85,7 @@ Modern Best Practices
 
  <!-- sample table -->
 
-    <table border="1">
+    <table >
         <caption> This is a database table</caption>
         
         <thead>
@@ -110,7 +132,7 @@ Modern Best Practices
     <br>
     <br>
     <!-- colspan -->
-    <table border="1">
+    <table border="1"> <!-- this is used for primary border until the css applied -->
         <tr>
             <th colspan="2">Student Information</th>
         </tr>

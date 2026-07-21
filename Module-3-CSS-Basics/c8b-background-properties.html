@@ -1,41 +1,7 @@
+
 <!-- 
- ***************box-shadow****************
-The box-shadow property adds a shadow around an element.
-
-//syntax: (HVBSC)
-box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color;
-
-.box {
-    box-shadow: 5px 5px 10px 3px gray;  // HVBSC
-}
-
-| Property              | Description                            |
-| -----------------     | -------------------------------------- |
-| Horizontal Offset(x)  | Shadow moves left (-) or right (+)     |
-| Vertical Offset(y)    | Shadow moves up (-) or down (+)        |
-| Blur Radius           | Makes the shadow softer                |
-| Spread Radius         | Increases or decreases the shadow size |
-| Color                 | Shadow color                           |
-
-
-
-
-Types :
-
-| Property     | Example                                   | Purpose             |
-| ------------ | ----------------------------------------- | ------------------- |
-| Basic shadow | `box-shadow: 5px 5px black;`              | Simple shadow       |
-| Blur         | `box-shadow: 5px 5px 10px gray;`          | Soft shadow         |
-| Spread       | `box-shadow: 5px 5px 10px 3px gray;`      | Control shadow size |
-| Inset        | `box-shadow: inset 0 0 10px gray;`        | Inner shadow        |
-| Multiple     | `box-shadow: 0 0 5px red, 0 0 10px blue;` | Multiple shadows    |
-
-box-shadow: 0 5px 15px gray; // x(0) y blur color
-
-
-
-
-*******************Background Properties*********************
+ 
+✅✅✅*******************Background Properties*********************
 
 | Property                | Example                                 | Purpose                                      |
 | ----------------------- | --------------------------------------- | -------------------------------------------- |
@@ -46,6 +12,7 @@ box-shadow: 0 5px 15px gray; // x(0) y blur color
 | `background-attachment` | `fixed`                                 | Creates a fixed background effect            |
 | `background-color`      | `lightblue`                             | Sets a background color                      |
 | `background`            | `url("img.jpg") no-repeat center/cover` | Shorthand for multiple background properties |
+|  linear-gradiant        |  background:linear-gradient(red, yellow);|  mix of colors          |
 
 
 
@@ -82,8 +49,8 @@ background-size: cover;
 
 | Value         | Description                             |
 | ------------- | --------------------------------------- |
-| `cover`       | Fills the element, may crop the image   |
-| `contain`     | Fits the whole image inside the element |
+| `cover`       | Fill the entire container (may crop the image).   |
+| `contain`     | Show the entire image (may leave empty space in the container).    |
 | `100% 100%`   | Stretches the image to fill the element |
 | `300px 200px` | Fixed width and height                  |
 
@@ -123,10 +90,26 @@ background-color: lightblue;
 }
 
 
+✅linear-gradient
+
+background: linear-gradient(direction, color1, color2);
+direction → Optional (top, bottom, left, right, angle)
+color1 → Starting color
+color2 → Ending color
+
+background: linear-gradient(red, yellow);
+background: linear-gradient(to right, red, blue);
+background: linear-gradient(to left, red, blue);
+background: linear-gradient(to top, red, yellow);
+background: linear-gradient(45deg, red, blue);
+background: linear-gradient(90deg, red, blue);
+background: linear-gradient(red, yellow, green);
+
+
+
+
 
 -->
-
-<!-- coding example -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -136,15 +119,7 @@ background-color: lightblue;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Shadow & Background</title>
     <style>
-        .card {
-            width: 200px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px;
-            /* x y blur */
-
-        }
+       
 
         .hero {
             width: 100%;
@@ -173,11 +148,7 @@ background-color: lightblue;
 
 <body>
 
-    <!-- shadow card -->
-    <div class="card">
-        Card
-    </div>
-
+   
 
     <!-- background image-->
     <div class="hero">

@@ -1,0 +1,211 @@
+<!-- 
+✅✅✅ ***************box-shadow****************
+The box-shadow property adds a shadow around an element.
+
+//syntax: (HVBSC)
+box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color;
+
+.box {
+    box-shadow: 5px 5px 10px 3px gray;  // HVBSC
+}
+
+| Property              | Description                            |
+| -----------------     | -------------------------------------- |
+| Horizontal Offset(x)  | Shadow moves left (-) or right (+)     |
+| Vertical Offset(y)    | Shadow moves up (-) or down (+)        |
+| Blur Radius           | Makes the shadow softer                |
+| Spread Radius         | Increases or decreases the shadow size |
+| Color                 | Shadow color                           |
+
+
+
+
+Types :
+
+| Property     | Example                                   | Purpose             |
+| ------------ | ----------------------------------------- | ------------------- |
+| Basic shadow | `box-shadow: 5px 5px black;`              | Simple shadow       |
+| Blur         | `box-shadow: 5px 5px 10px gray;`          | Soft shadow         |
+| Spread       | `box-shadow: 5px 5px 10px 3px gray;`      | Control shadow size |
+| Inset        | `box-shadow: inset 0 0 10px gray;`        | Inner shadow        |
+| Multiple     | `box-shadow: 0 0 5px red, 0 0 10px blue;` | Multiple shadows    |
+
+box-shadow: 0 5px 15px gray; // x(0) y blur color
+
+
+
+
+
+
+
+
+
+
+✅✅✅ ***************hover****************
+The hover pseudo-class applies styles when the user places the mouse pointer over an element.
+syntax:
+selector:hover {
+    property: value;
+}
+
+Common Properties Used with :hover
+
+| Property           | Example                        | Purpose                 |
+| ------------------ | ------------------------------ | ----------------------- |
+| `color`            | `color: red;`                  | Change text color       |
+| `background`       | `background: blue;`            | Change background       |
+| `background-color` | `background-color: green;`     | Change background color |
+| `border`           | `border: 2px solid red;`       | Change border           |
+| `border-radius`    | `border-radius: 20px;`         | Round corners           |
+| `box-shadow`       | `box-shadow: 0 8px 20px gray;` | Add shadow              |
+| `opacity`          | `opacity: 0.7;`                | Fade element            |
+| `cursor`           | `cursor: pointer;`             | Change cursor           |
+| `transform`        | `transform: scale(1.1);`       | Move, rotate, zoom      |
+| `filter`           | `filter: brightness(120%);`    | Change brightness       |
+| `text-decoration`  | `text-decoration: underline;`  | Underline text          |
+
+
+✅transform Property : The transform property changes the appearance of an element without affecting the layout around it.
+
+//syntax:
+transform: function(value);
+//ex:
+transform: scale(0.8);
+
+Common Transform Functions : 
+
+| Function        | Description                    |
+| --------------- | ------------------------------ |
+| `translate()`   | Move element                   |
+| `translateX()`  | Move left/right                |
+| `translateY()`  | Move up/down                   |
+| `translate3d()` | Move in 3D                     |
+| `scale()`       | Increase/decrease size         |
+| `scaleX()`      | Scale horizontally             |
+| `scaleY()`      | Scale vertically               |
+| `rotate()`      | Rotate element                 |
+| `rotateX()`     | Rotate in 3D (X-axis)          |
+| `rotateY()`     | Rotate in 3D (Y-axis)          |
+| `rotateZ()`     | Rotate in 3D (Z-axis)          |
+| `skew()`        | Tilt element                   |
+| `skewX()`       | Tilt horizontally              |
+| `skewY()`       | Tilt vertically                |
+| `matrix()`      | Advanced combination transform |
+
+
+
+✅translate() : Moves an element.
+
+transform: translateX(30px);  //moves right
+transform: translateX(-30px); //moves left
+transform: translateY(30px);  //moves down
+transform: translateY(-30px); //moves up
+transform: translate(20px, 10px); //move both x,y
+
+
+✅ transition : With transition, the browser animates the change smoothly over a specified amount of time.
+⚠️You should almost always put transition on the original element (e.g., .card), not on :hover.
+
+//Without transition
+button{
+    background: blue;
+}
+button:hover{
+    background: red;
+}
+//Result
+Blue  ─────────► Red
+       Instant
+
+The color changes immediately.
+
+//With transition:
+button{
+    background: blue;
+    transition: 0.5s;
+}
+button:hover{
+    background: red;
+}
+
+//Result
+Blue
+   ↓
+Purple
+   ↓
+Red
+
+The browser gradually changes the color over 0.5 seconds.
+
+⚠️//transition can perform with any css
+
+transition: background-color 0.3s;
+transition: transform 0.3s;
+transition: box-shadow 0.3s;
+
+//ex 
+img{
+    transition:transform 0.3s ease;
+}
+img:hover{
+    transform:scale(1.1);
+}
+
+📌Animate Everything
+transition: all 0.3s ease;
+
+⚠️Timing Function of transition: Controls how the animation moves.
+
+| Value         | Meaning                             |
+| ------------- | ----------------------------------- |
+| `ease`        | Starts slow, speeds up, ends slow |
+| `linear`      | Constant speed                      |
+| `ease-in`     | Starts slowly                       |
+| `ease-out`    | Ends slowly                         |
+| `ease-in-out` | Slow at both ends                   |
+
+
+
+
+
+
+
+-->
+
+<!-- coding example -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow & Background</title>
+    <style>
+
+        .card {
+            width: 200px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px;
+            /* x y blur */
+
+        }
+
+        
+    </style>
+
+<body>
+
+    <!-- shadow card -->
+    <div class="card">
+        Card
+    </div>
+
+
+   
+
+</body>
+
+</html>

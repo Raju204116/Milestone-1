@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3-4</title>
+
+    <style>
+        /* num1 */
+        .block{
+            display: block;
+            background-color: rgb(120, 177, 224);
+        }
+        .inline{
+            display: inline;
+            background-color: rgb(221, 141, 116);      
+            
+        }
+        .inline-block{
+            display: inline-block;
+            background-color: rgb(224, 200, 120);   
+        }
+
+        .block, .inline, .inline-block{
+            height: 30vh;
+            font-size: 2rem;
+        }
+
+        /* num2 */
+        .display-none{
+            display: none;
+            background-color: green;
+            height: 20vh;
+        }
+
+        .visibility-hidden{
+            visibility: hidden;
+            background-color: rgb(93, 114, 211);
+            height: 20vh;
+        }
+
+        /* num3 */
+        .hover-property{
+            width: 50vw;
+            height: 30vh;
+            background-color: rgb(137, 201, 198);
+            margin: 20px;
+            padding: 10px;
+            
+            transition: all 0.3s ease;
+
+            box-shadow: 5px 4px 4px rgb(137, 201, 176); 
+           /* box-shadow: x y spread color */
+
+        }
+
+        .hover-property:hover{
+            background-color: blueviolet;
+            transform: translateY(-4px);
+            
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <!-- num1 -->
+
+    <div class="block">
+        <p>It starts on a <b>new</b> line and takes full width by default. Width & height can be set. </p>
+    </div>
+
+    <!-- NB: div is a block-level element, so inline will not work properly in div -->
+    <!-- A <span> is an inline element, and a <p> is a block-level element.
+          You cannot put a block-level element inside an inline element. -->
+    <span class="inline">
+        It starts on the <b>same</b> line and takes requires width only. Width & height cann't  set.
+    </span>
+
+
+    <span class="inline-block">
+        <p> It starts on the <b>same</b> line and takes requires width only. Width & height can be set.</p>
+    </span>
+
+
+    <!-- num2 -->
+
+    <div class="display-none">
+        <p>Display: none . It completely hides with its space too. </p>
+    </div>
+
+    <div class="visibility-hidden">
+        Visibility: hidden . It hides, but keeps it space.
+    </div>
+    
+    <p>After the none & hidden block.(to check the space)</p>
+
+
+    <!-- num3 -->
+
+    <div class="hover-property">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ab!
+
+    </div>
+
+
+
+</body>
+</html>

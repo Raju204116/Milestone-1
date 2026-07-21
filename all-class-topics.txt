@@ -138,16 +138,23 @@ padding
 display : block, inline, inline-block, flex, grid, none
 visibility : visible, hidden.
 
-✅c-8-box shadow & background properties
+✅c-8a-box shadow & hover properties
 box shadow :x,y, blur, spread, color
+
+hover properties : transform, translate, transition
+
+
+✅c-8b- background properties
 bg properties : 
+
 background-image
 background-repeat
 background-size
 background-position
 background-attachment
 background-color
-background
+background 
+linear-gradient
 
 ✅c-9-css specificity(priority)
 Inline style  

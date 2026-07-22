@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px; 
+    background-color:#1f2937;
+}
+
+.logo h2{
+    color:white;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:3em;
+    padding-right: 100px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#60A5FA;
+}
+
+
+
+
+
+
+
+/* Price Card */
+.price-card{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    gap: 30px;
+}
+.common-card{
+    border:1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;  /* need for discount-badge */
+    
+}
+
+.common-card h3{
+    color:#2563EB;
+    font-size:22px;
+}
+.common-card h2{
+    margin: 5px 0;
+    
+    font-size:40px;
+}
+.common-card p{
+    color:#6B7280;
+}
+.common-card hr{
+    opacity: 2;
+    margin: 15px 0;
+}
+
+.common-card ul{
+    list-style-position: inside;
+    transition: all 0.3s ease;
+    margin:20px 0;
+
+}
+
+.common-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.common-card button{
+    font-size: 18px;
+    padding:12px 24px;
+    width:100%;
+    cursor:pointer;
+    border-radius: 10px;
+    /* margin: 10px; */
+    margin-top:auto;
+    
+}
+
+.standard-card{
+    background-color: #0D1B2A;
+    color: white;
+    transform: scale(1.05);
+
+    position: relative; /* parent position of popular-badge  */
+}
+.standard-card p{
+    color:#D1D5DB;
+}
+.popular-badge{
+    position: absolute; /* child position of standard-card  */
+    top:-12px;
+    right:20px;
+    /* left: 112px; */
+
+    background:#2563EB;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+
+    z-index:10; /* to stay on top  */
+    
+}
+
+.discount-badge {
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    background-color: #EF4444; /* Red color to highlight the discount */
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+
+/* Responsive Design: Stack into a single column on small screens */
+@media (max-width: 768px) {
+    .price-card {
+        grid-template-columns: 1fr; /* Changes grid to 1 column */
+    }
+    
+    .standard-card {
+        transform: none; /* Removes the scale effect on mobile to prevent layout clipping */
+    }
+}
+
+
+
+
+
+
+
+
+
+/* table-section */
+ table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 70%;
+    max-width: 1000px;
+    margin: 60px auto; /* auto will set to horizontally center */
+     
+ }
+caption{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ th{
+    background-color: #0D1B2A;
+    color: white;
+ }
+th,td{
+    border: 1px solid #ddd;
+    padding:15px 20px;
+  }
+
+tbody tr:nth-child(even){   /* gray color for even rows */
+    background-color: #f0eeee;
+}
+
+tbody tr:hover{
+    background-color:#dbeafe ;
+}
+tbody td:first-child{ /* keep the feature names starting from left */
+    text-align: left;  
+    font-weight: 600;
+}
+
+/* fixed contact-us bar */
+
+.contact-us{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0D1B2A;
+    color: white;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+}
+.contact-us button a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563EB;
+    color: white;
+    cursor: pointer;
+}
+
+/* blank-div  */
+.blank{
+    margin: 500px 0;
+    text-align: center;
+    
+}

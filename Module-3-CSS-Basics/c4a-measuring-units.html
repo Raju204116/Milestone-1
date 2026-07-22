@@ -1,11 +1,11 @@
 
 <!-- 
- CSS measuring units define the size of elements, text, spacing, and layouts.
+✅✅CSS measuring units define the size of elements, text, spacing, and layouts.
 They are divided into Absolute Units and Relative Units. 
 -->
 
 <!-- 
-*****************1.Absolute Units (Fixed Size)**************************
+✅✅*****************1.Absolute Units (Fixed Size)**************************
 These units stay the same regardless of screen size.
 
 
@@ -22,7 +22,7 @@ These units stay the same regardless of screen size.
 
 
 
-*****************2.Relative Units**************************
+✅✅*****************2.Relative Units**************************
 These units change based on the parent element, root element, or viewport(window/phone screen).
 
 | Unit   | Full Form        | Relative To                                            | Common Uses                           | Example                           |
@@ -41,13 +41,13 @@ These units change based on the parent element, root element, or viewport(window
 
 
 
-✅ Most important relative units to learn first:  rem, em, %, fr and vw, vh.
+⚠️ Most important relative units to learn first:  rem, em, %, fr and vw, vh.
 
 
 *************Details Analysis*******************
 
 
-************* % -Relative to the parent element.*******************
+✅************* % -Relative to the parent element.*******************
 .container {
     width: 80%;
 }
@@ -55,7 +55,7 @@ If the parent is 1000px wide, then 80% = 800px
 
 
 
-************** em -Relative to the font size of the parent.******************
+✅************* em -Relative to the font size of the parent.******************
 
 .parent {
     font-size: 20px;
@@ -68,7 +68,7 @@ If the parent is 1000px wide, then 80% = 800px
 Calculation: 2 × 20px = 40px
 
 
-************** rem -Relative to the font size of the root (html).******************
+✅************** rem -Relative to the font size of the root (html).******************
 It stays consistent no matter how deeply nested an element is.
 
 html {
@@ -83,7 +83,7 @@ Calculation: 2 × 16px = 32px
 
 
 
-**************** fr - Used only with CSS Grid. *********************
+✅**************** fr - Used only with CSS Grid. *********************
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -96,7 +96,7 @@ The available space is divided into: 25% | 50% | 25%  (total of 100%)
 
 
 
-************** 1vw = 1% of the browser width ******************
+✅************** 1vw = 1% of the browser width ******************
 
 width: 50vw;
 
@@ -105,18 +105,18 @@ If the browser width is 1200px, then 50vw = 600px  (50% of 1200)
 25vw=300, 75vw=900
 
 
-*************same for vh*******************
+✅*************same for vh*******************
 
 
 
-****************vmin - Uses the smaller of the viewport's width or height.**************************
+✅****************vmin - Uses the smaller of the viewport's width or height.**************************
 
 Width = 1200px
 Height = 800px
 
 1vmin = 8px (min of 12 & )
 
-************oposite for vmax**********
+✅************oposite for vmax**********
 
 
 
